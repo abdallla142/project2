@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training | Skill Sphere</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">Soccer Skills</span>
+                </a>
+                <nav class="nav-menu-desktop">
+                    <a href="index.html" class="nav-item">
+                        <span>Home</span>
+                    </a>
+                    <a href="skills.html" class="nav-item">
+                        <span>Skills</span>
+                    </a>
+                    <a href="training.html" class="nav-item active">
+                        <span>Training</span>
+                    </a>
+                    <a href="about.html" class="nav-item">
+                        <span>About</span>
+                    </a>
+                </nav>
+                <button class="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Training Hero -->
+        <section class="skills-hero-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h1 class="section-title">Training Guides & Challenges</h1>
+                    <p class="section-description">Learn from step-by-step guides and test your skills with practice challenges.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guides Section -->
+        <section class="learn-section">
+            <div class="section-container">
+                <h2 class="section-title">Training Guides</h2>
+                <p class="section-description">Short guides with drills and tips.</p>
+                <div class="learn-grid">
+                    <a href="passing.html" class="learn-card">
+                        <h3 class="learn-card-title">Passing Basics</h3>
+                        <p class="learn-card-text">Targets, body shape, and timing.</p>
+                        <span class="skill-link">Open Guide →</span>
+                    </a>
+                    <a href="receiving.html" class="learn-card">
+                        <h3 class="learn-card-title">First Touch from Air</h3>
+                        <p class="learn-card-text">Cushion, angle, and next action.</p>
+                        <span class="skill-link">Open Guide →</span>
+                    </a>
+                    <a href="shooting.html" class="learn-card">
+                        <h3 class="learn-card-title">Shooting Mechanics</h3>
+                        <p class="learn-card-text">Plant foot, contact, follow-through.</p>
+                        <span class="skill-link">Open Guide →</span>
+                    </a>
+                    <a href="step-over.html" class="learn-card">
+                        <h3 class="learn-card-title">Step Over Move</h3>
+                        <p class="learn-card-text">Sell the fake and accelerate.</p>
+                        <span class="skill-link">Open Guide →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges Section -->
+        <section class="skills-section">
+            <div class="skills-grid-overlay"></div>
+            <div class="section-container">
+                <h2 class="section-title">Practice Challenges</h2>
+                <p class="section-description">Test your skills with these challenges to improve your game.</p>
+                <div class="learn-grid">
+                    <div class="learn-card challenge-card">
+                        <h3 class="learn-card-title">Dribbling Speed Challenge</h3>
+                        <p class="learn-card-text">Complete 10 cone dribbles in under 30 seconds. Tests your ball control and speed.</p>
+                        <button onclick="startChallenge('Dribbling Speed Challenge')" class="btn btn-challenge">Start Challenge</button>
+                    </div>
+                    <div class="learn-card challenge-card">
+                        <h3 class="learn-card-title">Passing Accuracy Challenge</h3>
+                        <p class="learn-card-text">Hit 20 out of 25 targets in a passing drill. Master accuracy and consistency.</p>
+                        <button onclick="startChallenge('Passing Accuracy Challenge')" class="btn btn-challenge">Start Challenge</button>
+                    </div>
+                    <div class="learn-card challenge-card">
+                        <h3 class="learn-card-title">Juggling Milestone</h3>
+                        <p class="learn-card-text">Reach 50 consecutive juggles without dropping. Build your touch and control.</p>
+                        <button onclick="startChallenge('Juggling Milestone')" class="btn btn-challenge">Start Challenge</button>
+                    </div>
+                    <div class="learn-card challenge-card">
+                        <h3 class="learn-card-title">Shooting Power Challenge</h3>
+                        <p class="learn-card-text">Score 10 goals from outside the penalty box. Develop power and accuracy.</p>
+                        <button onclick="startChallenge('Shooting Power Challenge')" class="btn btn-challenge">Start Challenge</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid-overlay"></div>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="footer-logo-text">Soccer Skills</span>
+                    </div>
+                    <p class="footer-description">Learn soccer skills through clear instruction and practice. Build your abilities one technique at a time.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Training Areas</h3>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="skills.html" class="footer-link">Skills</a>
+                        <a href="training.html" class="footer-link">Training</a>
+                        <a href="about.html" class="footer-link">About</a>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Credits</h3>
+                    <p class="footer-credits">Created by Abdalla Omar<br>MYP Personal Project 2025</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 Skill Sphere. Helping players improve their game.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
