@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="header-content">
@@ -43,7 +42,6 @@
     </header>
 
     <main class="main-content">
-        <!-- Skill Detail Hero -->
         <section class="skill-detail-hero">
             <div class="skill-detail-container">
                 <a href="skills.html" class="back-button">
@@ -61,11 +59,9 @@
             </div>
         </section>
 
-        <!-- Skill Detail Content -->
         <section class="skill-detail-content">
             <div class="skill-detail-container">
                 <div class="skill-detail-grid">
-                    <!-- Left Column - Watch & Learn -->
                     <div class="skill-detail-left">
                         <div class="detail-card">
                             <div class="detail-card-header">
@@ -77,15 +73,18 @@
                                 <h2 class="detail-card-title">Watch & Learn</h2>
                             </div>
                             <div class="video-container">
-                                <video controls class="skill-video">
-                                    <source src="step over edited.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                                <iframe
+                                    class="youtube-video"
+                                    src="https://www.youtube.com/embed/YknceCCyYGc"
+                                    title="Step over soccer move tutorial"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                                </iframe>
                             </div>
+                            <a href="https://www.youtube.com/watch?v=YknceCCyYGc" target="_blank" class="btn btn-youtube-credits">Watch on YouTube</a>
                         </div>
                     </div>
 
-                    <!-- Right Column - Step by Step & Pro Tips -->
                     <div class="skill-detail-right">
                         <div class="detail-card">
                             <div class="detail-card-header">
@@ -128,7 +127,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-grid-overlay"></div>
         <div class="footer-container">
