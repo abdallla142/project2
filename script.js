@@ -104,8 +104,11 @@ challengeButtons.forEach(button => {
     });
 });
 
-function startChallenge(challengeName) {
-    alert(`Starting "${challengeName}"! Get ready to practice and improve your skills.`);
+function startChallenge(challengeName, button) {
+    if (button.textContent === 'Start Challenge') {
+        button.textContent = 'Challenge Started';
+        button.disabled = true;
+    }
 }
 
 videoCards.forEach(card => {
